@@ -1,4 +1,5 @@
 require 'time'
+require 'pry'
 
 class Event
   attr_accessor :start_date, :duration, :title, :attendees
@@ -34,7 +35,7 @@ class Event
   def to_s
     puts "Titre : #{@title}"
     puts "Date de début : #{@start_date}"
-    puts "Durée : #{@duration / 60} minutes"
+    puts "Durée : #{@duration} minutes"
     puts "Invités : #{@attendees.join(", ")}"
   end
 end
